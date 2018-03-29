@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Sage Project Hub</string>
+    <string name="title_home">Home</string>
+    <string name="title_projects">Projects</string>
+    <string name="title_board">Board</string>
+    <string name="title_notification">Notification</string>
+    <string name="title_menu">Menu</string>
+</resources>
