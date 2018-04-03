@@ -1,4 +1,4 @@
-package hk.com.sagetech.sageprojecthub;
+package hk.com.sagetech.sageprojecthub.activities;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -6,6 +6,9 @@ import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.widget.TextView;
+
+import hk.com.sagetech.sageprojecthub.utils.BottomNavigationViewHelper;
+import hk.com.sagetech.sageprojecthub.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,23 +20,8 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
-                case R.id.navigation_home:
-                    mTextMessage.setText(R.string.title_home);
-                    return true;
-                case R.id.navigation_projects:
-                    mTextMessage.setText(R.string.title_projects);
-                    return true;
-                case R.id.navigation_board:
-                    mTextMessage.setText(R.string.title_board);
-                    return true;
-                case R.id.navigation_notification:
-                    mTextMessage.setText(R.string.title_notification);
-                    return true;
-                case R.id.navigation_menu:
-                    mTextMessage.setText(R.string.title_menu);
-                    return true;
+                default: return false;
             }
-            return false;
         }
     };
 

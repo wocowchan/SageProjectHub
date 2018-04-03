@@ -1,4 +1,4 @@
-package hk.com.sagetech.sageprojecthub;
+package hk.com.sagetech.sageprojecthub.utils;
 
 import android.annotation.SuppressLint;
 import android.support.design.internal.BottomNavigationItemView;
